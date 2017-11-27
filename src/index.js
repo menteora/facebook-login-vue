@@ -6,11 +6,10 @@ export const facebookLoginPlugin = {
     Vue.component(facebookLogin.name, facebookLogin)
   }
 }
-export default facebookLogin
 
 export const facebookCommentsPlugin = {
   install: function (Vue, options) {
     Vue.component(facebookComments.name, facebookComments)
   }
 }
-export default facebookComments
+export {facebookLogin, facebookComments}
