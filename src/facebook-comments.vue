@@ -1,5 +1,6 @@
 <template>
   <div class="facebook-comments">
+    <div class="fb-comments" :data-href="url" :data-numposts="numposts"></div>
   </div>
 </template>
 
@@ -19,6 +20,14 @@ export default {
     version: {
       type: String,
       default: 'v2.10'
+    },
+    url: {
+      type: String,
+      default: 'https://developers.facebook.com/docs/plugins/comments#configurator'
+    },
+    numposts: {
+      type: String,
+      default: '5'
     }
   },
   data() {
